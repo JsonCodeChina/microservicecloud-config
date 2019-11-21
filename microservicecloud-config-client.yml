@@ -1,0 +1,33 @@
+spring:
+  prfiles:
+    active:
+    - dev
+    
+---
+
+server:
+  port: 8201
+spring:
+  prfiles: dev
+  application:
+    name: microservicecloud-client-config
+
+eureka:
+  client:
+    server-url:
+      defaultZone: http://eureka-dev.com:7001/eureka/
+
+---
+
+server:
+  port: 8202
+
+spring:
+  prfiles: test
+  application:
+    name: microservicecloud-config-client
+
+eureka:
+  client:
+    server-url:
+      defaultZone: http://eureka-dev.com:7001/eureka/
