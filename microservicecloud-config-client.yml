@@ -1,5 +1,5 @@
 spring:
-  prfiles:
+  profiles:
     active:
     - dev
     
@@ -8,7 +8,7 @@ spring:
 server:
   port: 8201
 spring:
-  prfiles: dev
+  profiles: dev
   application:
     name: microservicecloud-client-config
 
@@ -23,7 +23,7 @@ server:
   port: 8202
 
 spring:
-  prfiles: test
+  profiles: test
   application:
     name: microservicecloud-config-client
 
